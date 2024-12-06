@@ -51,9 +51,9 @@ public class AdvertService {
                 ));
     }
 
-    public List<AdvertDtoRs> findByFilter(@NonNull String brandName,
-                                          @NonNull String color,
-                                          @NonNull BigDecimal price) {
+    public List<AdvertDtoRs> findByFilter(String brandName,
+                                          String color,
+                                          BigDecimal price) {
         return advertRepository.getByFilter(brandName, color, price).stream()
                 .map(this::convertToDtoRs)
                 .toList();

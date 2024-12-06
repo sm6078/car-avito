@@ -55,7 +55,7 @@ public class AdvertController {
     }
 
     @GetMapping("/filter")
-    public ResponseEntity<?> filter(
+    public ResponseEntity<?> getFilterByParameter(
             @RequestParam(required = false) String brandName,
             @RequestParam(required = false) String color,
             @RequestParam(required = false) BigDecimal price) {
