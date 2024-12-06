@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: car-avito
+server:
+  port: 8003
